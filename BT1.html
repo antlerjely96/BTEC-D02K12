@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td align="right">
+                    Họ tên: 
+                </td>
+                <td>
+                    <input type="text" name="ho_ten"> *
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Địa chỉ: 
+                </td>
+                <td>
+                    <input type="text" name="dia_chi" size="50px"> *
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Điện thoại: 
+                </td>
+                <td>
+                    <input type="text" name="so_dien_thoai"> *
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Email: 
+                </td>
+                <td>
+                    <input type="email" name="email"> *
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Loại hoa: 
+                </td>
+                <td>
+                    <select name="loai_hoa">
+                        <option value="hoa_thuoc_duoc">Hoa thược dược</option>
+                        <option value="hoa_dong_tien">Hoa đồng tiền</option>
+                        <option value="hoa_cai_do">Hoa cải đỏ</option>
+                        <option value="hoa_sung">Hoa súng</option>
+                        <option value="hoa_ban">Hoa ban</option>
+                    </select>
+                    màu
+                    <select>
+                        <option value="do">Đỏ</option>
+                        <option value="den">Đen</option>
+                        <option value="trang">Trắng</option>
+                        <option value="vang">Vàng</option>
+                        <option value="xanh">Xanh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Số lượng: 
+                </td>
+                <td>
+                    <input type="number" name="so_luong" min="10" max="100"> *
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Đơn vị tính
+                </td>
+                <td>
+                    <input type="radio" name="don_vi_tinh"> nhánh
+                    <input type="radio" name="don_vi_tinh"> bó
+                    <input type="radio" name="don_vi_tinh"> chậu
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Thanh toán
+                </td>
+                <td>
+                    <input type="radio" name="thanh_toan"> Tiền mặt
+                    <input type="radio" name="thanh_toan"> Chuyển khoảng
+                    <input type="radio" name="thanh_toan"> Séc
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Yêu cầu:
+                </td>
+                <td>
+                    <textarea name="yeu_cau">
+                        Chả có yêu cầu gì
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Ngày nhận hàng:
+                </td>
+                <td>
+                    <input type="date" name="ngay_nhan_hang" value="2020-01-01">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Giờ nhận hàng:
+                </td>
+                <td>
+                    <input type="time" name="gio_nhan_hang" value="13:00:00">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Ngày giờ nhận hàng:
+                </td>
+                <td>
+                    <input type="datetime-local" name="ngay_gio_nhan_hang" value="2018-06-12T19:30:01">
+                    <input type="week">
+                    <input type="month">
+                    <input type="color">
+                    <input type="hidden" value="Hello">
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>
+                        Đăng ký
+                    </button>
+                    <button type="reset">
+                        Xóa thông tin
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
