@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 12</title>
+    <style>
+        /* pseudo style: pseudo-class, pseudo-element */
+        /* pseudo-class: format 1 thẻ
+            <selector>:<pseudo-class> {
+                Các thuộc tính;
+            }
+            pseudo-element: viết cho nội dung của thẻ
+            <selector>::<pseudo-element> {
+                Các thuộc tính;
+            }
+        */
+        /* p:first-child {
+            color: red;
+        }
+        p::first-letter {
+            text-decoration: line-through;
+            font-size: 50px;
+        } */
+        /* combinator */
+        /* dấu cách: tất cả những selector2 nằm trong selector1
+            <selector1> <selector2> {
+                Các thuộc tính;
+            }
+            +: selector2 đầu tiên ngay sau selector1 && selector2 bằng cấp selector1
+            <selector1> + <selector2> {
+                Các thuộc tính;
+            }
+            >: tất cả những selector2 là con của selector1
+            <selector1> > <selector2> {
+                Các thuộc tính;
+            }
+            ~: tất cả những selector2 sau selector1 && selector2 bằng cấp selector1
+            <selector1> ~ <selector2> {
+                Các thuộc tính;
+            }
+        */
+        /* div p {
+            text-decoration: underline;
+        } */
+        /* div + p {
+            text-decoration: underline;
+        } */
+        /* div > p {
+            text-decoration: underline;
+        } */
+        /* div ~ p {
+            text-decoration: underline;
+        } */
+        /* attr selector 
+            <selector>[<attr>] {
+                Các tuộc tính;
+            }
+            <selector>[<attr> = "<giá trị của attr>"] {
+                Các tuộc tính;
+            }
+        */
+        p[title] {
+            color: red;
+        }
+        p[title = "p3"] {
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Đây là p1</p>
+    <p>Đây là p2</p>
+    <p title="p3">Đây là p3</p>
+    <div>
+        <p>Đây là p4</p>
+        <p>Đây là p5</p>
+        <nav>
+            <p title="p6">Đây là p6</p> 
+        </nav>
+    </div>
+    <p>Đây là p7</p>
+    <p>Đây là p8</p>
+    <nav>
+        <p>Đây là p9</p>
+    </nav>
+</body>
+</html>
