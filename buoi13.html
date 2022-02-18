@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 13</title>
+    <script>
+        function demo(){
+            document.getElementById('the_p').innerHTML = "Đây không phải thẻ p";
+            document.getElementById('the_p').title = "Thẻ p";
+            document.getElementById('the_p').style.color = "red";
+            // Khai báo biến: var, let
+            var a = 5;
+            var b = 6;
+            var c = "abc";
+            var d;
+            d = 10;
+            // alert(c.charAt(0));
+            // console.log(c.concat('123'));
+            // console.log(typeof(a));
+            // console.log(typeof(a.toString()));
+            var x = "a10 20";
+            console.log(parseInt(x));
+            console.log(typeof(parseInt(x)));
+        }
+    </script>
+</head>
+<body>
+    <p title="p" id="the_p" onclick="demo()">Đây là thẻ p</p>
+</body>
+</html>
