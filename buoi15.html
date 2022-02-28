@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 15</title>
+    <script>
+        // array
+        var arr = [];
+        var arr1 = [0, 1, 2, 3, 9, 5, 41, 20, 60, 70, 21, 35];
+        var arr2 = new Array();
+        var arr3 = new Array("a", "b", "c");
+        var arr4 = new Array(10);
+        console.log(arr, arr1, arr2, arr3, arr4);
+        // function
+        function demo() {
+        }
+        // Math object
+        console.log(Math.PI);
+        console.log(Math.random() * 100);
+        console.log(Math.round(Math.random() * 100));
+        console.log(Math.round(4.1));
+        console.log(Math.round(4.6));
+        console.log(Math.floor(4.1));
+        console.log(Math.floor(4.6));
+        console.log(Math.ceil(4.1));
+        console.log(Math.ceil(4.6));
+        // VD: Cho mảng arr có 10 phần tử. Tìm max của mảng
+        function tim_max(){
+            var max = Number(arr1[0]);
+            for(var i = 1; i < arr1.length; i++){
+                if(max < Number(arr1[i])){
+                    max = Number(arr1[i]);
+                }
+            }
+            console.log(max);
+        }
+        tim_max();
+        /* BT: cho mảng 10 phần tử (tự gán).
+        Sắp xếp mảng theo chiều giảm dần */
+        /* Cho mảng 10 phần tử. Hiển thị các phần tử là số nguyên tố*/
+        function kt() {
+            for(var i = 0; i < arr1.length; i++){
+                var dem = 0;
+                for(var j = 2; j < arr1[i]; j++){
+                    if(arr1[i] % j == 0){
+                        dem++;
+                    }
+                }
+                if(dem == 0){
+                    console.log(arr[i]);
+                }
+            }
+        }
+        kt();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
